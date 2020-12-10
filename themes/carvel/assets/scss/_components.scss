@@ -308,6 +308,12 @@
         padding-bottom: 40px;
     }
 }
+.mobile-blue-regular {
+    @include breakpoint(small) {
+        background-color: $blue;
+        padding-bottom: 40px;
+    }
+}
 .mobile-teal {
     @include breakpoint(small) {
         background-color: $teal;
@@ -558,6 +564,10 @@
 }
 
 .blog {
+    .card {
+        border: 1px solid $lightgrey;
+        padding: 20px;
+    }
     .col {
         border: 1px solid $lightgrey;
         img {
